@@ -11,6 +11,10 @@ background: #E5E5E5;
 color: #25282B;
     
 }
+
+body.hideScroll{
+    overflow: hidden;
+}
 .hide{
     display: none;
 }
@@ -30,9 +34,7 @@ button{
 
     
 }
-button.fat:hover{
-    text-decoration: none;
-}
+
 button:hover{
     text-decoration: underline;
 }
@@ -52,14 +54,7 @@ button:hover{
     margin-right: 20px;
 }
 /* Para uma classe usso .classe */
-button.fat{
-    color: #FFF;
-    background: #ff5E84; 
-    width: 150px;
-    height: 40px;
-    border-radius: 6px;
-    box-shadow: 0px 8px 16px #ff5E8462;
-}
+
 
 #footer a{
     color: #ff5E84;
@@ -71,6 +66,7 @@ button.fat{
 a{
     color: #ff5E84;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #footer a:hover{
@@ -145,19 +141,36 @@ p, .description{
     letter-spacing: 0.1px;
 }
 
+.button{
+    color: #FFF;
+    background: #ff5E84; 
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px #ff5E8462;
+}
+
+.button:hover{
+    text-decoration: none;
+}
+
 /* Modal */
 
 #modal{
     background: #ff5E84;
     position: absolute;
     top: 0; 
-    width: 100vw;
-    height: 100vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: flex;
     
     justify-content: center;
 
     transition: 400ms;
+}
+#modal.addScroll{
+    overflow: auto;
 }
 
 #modal .content{
@@ -270,3 +283,87 @@ form button:hover{
     visibility: hidden;
 }
 
+/* IDEA.HTML */
+
+#page-ideas #container{
+    display: block;
+}
+
+#page-ideas header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-ideas nav{
+    display: flex;
+    align-items: center;
+}
+/* Align Itens center alinha os itens ao centro do EIXO X */
+#page-ideas nav li{
+    list-style-type: none;
+    margin-right:16px;
+}
+
+#page-ideas nav li:last-child{
+    margin: 0;
+
+    width: 150px;
+
+    height: 40px;
+    background-color: #ff5E84;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    
+}
+
+#page-ideas nav li:last-child:hover{
+    background-color: #0984e3;
+    transition: 700ms;
+}
+
+#page-ideas nav li:last-child a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+#page-ideas nav li a{
+    color: #25282b
+}
+
+section#title{
+    text-align: center;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1{
+    margin: 0;
+
+    font-size: 28px;
+}
+
+
+section#ideas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+section#ideas .idea{
+    margin: 0px
+}
+
+section#ideas, section#title, footer{
+    margin-top: 64px;
+}
