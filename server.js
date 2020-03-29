@@ -43,8 +43,6 @@ server.get("/", function(req, res) {
     
     })
 
-    //regra de negócio
-
     
 })
 
