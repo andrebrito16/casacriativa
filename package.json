@@ -1,0 +1,25 @@
+{
+  "name": "casacriativa",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrebrito16/casacriativa.git"
+  },
+  "keywords": [],
+  "author": "Andre Brito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrebrito16/casacriativa/issues"
+  },
+  "homepage": "https://github.com/andrebrito16/casacriativa#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "nunjucks": "^3.2.1"
+  }
+}
