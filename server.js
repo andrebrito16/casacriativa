@@ -8,7 +8,7 @@ const db = require("./db.js")
 //configurar arquivos estáticos (css, scripts, imagens)
 server.use(express.static("public"))
 
-//habilitar uso do req.body
+//habilitar uso do req.body teste
 
 server.use(express.urlencoded({ extended: true}))
 
